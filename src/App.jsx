@@ -2,13 +2,15 @@ import { useState } from 'react'
 import {RiMenu3Line} from './assets/Icons.jsx'
 import './App.css'
 import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [shwslide, setshwslide] = useState(false)
 
   return (
     <>
-  <Navbar/>
+  <Navbar shwslide={shwslide} setshwslide={setshwslide}/>
+  <Sidebar shwslide={shwslide} setshwslide={setshwslide}/>
     </>
   )
 }

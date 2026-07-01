@@ -1,6 +1,13 @@
 import { RiMenu3Line, GiFullPizza, FaCartArrowDown, CiUser,CiSearch, RiSendPlaneFill,FaGreaterThan } from "../assets/Icons.jsx";
 
-export default function Navbar() {
+export default function Navbar({shwslide,setshwslide}) {
+
+
+const handleSlidebar = ()=>{
+            
+        setshwslide(true)
+        }
+
   return (
     <>
       <nav className="">
@@ -9,7 +16,7 @@ export default function Navbar() {
     <div className="mobile-nav md:hidden flex justify-between px-4 py-4 text-[#EF5B23] text-xl md:text-3xl ">
           {/* Icon  */}
         <div className="icon">
-          <RiMenu3Line />
+          <RiMenu3Line onClick={handleSlidebar} />
         </div>
 
         {/* logo  */}
@@ -28,7 +35,7 @@ export default function Navbar() {
     <div className="desk-nav hidden md:block md:flex justify-between items-center w-full  py-4 px-4 w-[90%] mx-auto ">
       {/* Logo  */}
       <div className="logo flex items-center gap-4">
-        <RiMenu3Line className=" text-[#EF5B23] text-3xl font-bold  "/>
+        <RiMenu3Line className=" text-[#EF5B23] text-3xl font-bold  "  onClick={handleSlidebar} />
         <div className="pizza flex items-center gap-1">
           <GiFullPizza className="text-[#BA801D] text-3xl font-extrabold "/> <h1 className="text-[#422415] font-bold text-2xl">Cheezious</h1>
         </div>
