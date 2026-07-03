@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import axios from 'axios';
 
 
+
 export default function Card(){
 
 
@@ -26,9 +27,17 @@ apifun()
 
 },[])
 
+// Slider 
+
+ 
+
     return (
 
         <>
+
+     
+
+        {/* Cards Started  */}
   <h2 className="text-4xl font-bold ml-10 my-10">Products</h2>      
 
  <div className="grid grid-cols-4 grid-rows-5 justify-items-center">

@@ -10,3 +10,9 @@ export default defineConfig({
 
   ],
 })
+
+export default defineConfig({
+  optimizeDeps: {
+    include: ["react-slick"],
+  },
+});

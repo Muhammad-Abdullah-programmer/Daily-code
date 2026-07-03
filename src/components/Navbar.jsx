@@ -1,4 +1,4 @@
-import { RiMenu3Line, GiFullPizza, FaCartArrowDown, CiUser,CiSearch, RiSendPlaneFill,FaGreaterThan,RxCross2 } from "../assets/Icons.jsx";
+import { RiMenu3Line, GiFullPizza,HiOutlineShoppingBag, FaCartArrowDown, CiUser,CiSearch, RiSendPlaneFill,FaGreaterThan,RxCross2 } from "../assets/Icons.jsx";
 import googleMap from  './GoogleMapTA.webp'
 
 export default function Navbar({shwslide,setshwslide,freepop,setfreepop,openpup,setopenpup}) {
@@ -21,6 +21,10 @@ const handleSlidebar = ()=>{
 
           setfreepop(true)
         }
+
+        // cart pupup div funstion 
+
+       
 
   return (
     <>
@@ -93,9 +97,26 @@ const handleSlidebar = ()=>{
         <FaGreaterThan className="absolute top-3 right-1 text-[#CCCCCC] font-bold"/>
       </div>
 
-        <button className="flex items-center px-3 py-2 rounded-md bg-[#FEDC00] hover:bg-[#8c8c8c] gap-2 font-bold relative "><FaCartArrowDown className="font-bold "/>Cart</button>
-        <span className="absolute right-28 top-3 rounded-full px-2 flex justify-center items-center  border-3 border-white bg-red-700 text-white  ">0</span>
+        
         <button className="flex items-center px-3 py-2 rounded-md bg-[#FEDC00] hover:bg-[#8c8c8c] gap-2 font-bold "><CiUser className="font-bold"/>Login</button>
+
+        <div className="relative group inline-block">
+  
+  <button className="flex items-center px-3 py-2 rounded-md bg-[#FEDC00] hover:bg-[#8c8c8c] gap-2 font-bold">
+    <FaCartArrowDown className="font-bold" />
+    Cart
+  </button>
+
+  {/* cart popup */}
+  <div className="hidden group-hover:flex py-4 rounded-2xl px-4 bg-white border-2 border-white shadow-lg hover:shadow-2xl z-50 absolute top-12 right-10 flex-col justify-center items-center min-w-90 min-h-60">
+    <HiOutlineShoppingBag className="text-9xl text-gray-400" />
+    <p className="text-lg font-bold tracking-wider uppercase">your cart is empty</p>
+    <span>go ahead and explore top categories</span>
+  </div>
+
+</div>
+
+      
       </div>
     </div>
       </nav>
