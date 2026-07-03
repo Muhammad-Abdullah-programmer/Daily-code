@@ -9,7 +9,7 @@ export default function Sidebar({shwslide,setshwslide}){
 
        
         <>
-        <aside className={` ${shwslide ? "block" : "hidden"} w-[80%]  md:w-[30%] h-[100vh] overflow-hidden bg-[#ffffff] z-50 shadow-[0_10px_30px_rgba(59,130,246,0.35)] absolute top-0`}>
+        <aside className={` ${shwslide ? "block" : "hidden"} w-[80%] transition-all  duration-75 ease-in  md:w-[30%] h-[100vh] overflow-hidden bg-[#ffffff] z-50 shadow-[0_10px_30px_rgba(59,130,246,0.35)] absolute top-0`}>
 
 {/* First Child  */}
 <div className="first-child flex flex-col  items-start pl-6 py-7">

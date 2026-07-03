@@ -12,6 +12,8 @@ export { RxDashboard } from "react-icons/rx";
 export { AiOutlineShop  } from "react-icons/ai";
 export { IoFastFood } from "react-icons/io5";
 export { LuPhoneCall } from "react-icons/lu";
+export { RxCross2 } from "react-icons/rx";
+
 
 
 
