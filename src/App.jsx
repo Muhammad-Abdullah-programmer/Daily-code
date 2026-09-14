@@ -4,7 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar.jsx'
 import Card from './components/Card.jsx'
-// import AdaptiveHeight from './components/AdaptiveHeight.jsx'
+import AdaptiveHeight from './components/AdaptiveHeight.jsx'
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
     <>
   <Navbar shwslide={shwslide} setshwslide={setshwslide} freepop={freepop} setfreepop={setfreepop} openpup={openpup} setopenpup={setopenpup}/>
   <Sidebar shwslide={shwslide} setshwslide={setshwslide}/>
-  {/* <AdaptiveHeight/> */}
+  <AdaptiveHeight/>
   <Card/>
     </>
   )

@@ -1,7 +1,9 @@
 import React from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ReadySlider from "react-slick";
+const Slider = ReadySlider.default || ReadySlider;
+
 
 function AdaptiveHeight() {
   const settings = {
@@ -46,5 +48,5 @@ function AdaptiveHeight() {
     </div>
   );
 }
-
+  
 export default AdaptiveHeight;
